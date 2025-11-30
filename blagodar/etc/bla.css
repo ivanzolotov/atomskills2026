@@ -1,0 +1,56 @@
+:root {
+  --reports-width: 277mm; /* 297mm - 10mm - 10mm */;
+  --report-b-first-col-width: 30.2mm;
+  --report-b-second-col-width: 57.5mm;
+  --report-b-third-col-width: 55.8mm;
+  --report-b-fourth-col-width: 7.4mm;
+  --report-b-fifth-col-width: 60.3mm;
+  --report-b-sixth-col-width: 20.8mm;
+  --report-b-seventh-col-width: 21.6mm;
+  --report-b-eighth-col-width: 23.4mm;
+}
+
+
+.report-b th:nth-child(1) {
+  width: var(--report-b-first-col-width);
+}
+.report-b th:nth-child(2) {
+  width: var(--report-b-second-col-width);
+}
+.report-b th:nth-child(3) {
+  width: var(--report-b-third-col-width);
+}
+.report-b th:nth-child(4) {
+  width: var(--report-b-fourth-col-width);
+}
+.report-b th:nth-child(5) {
+  width: var(--report-b-fifth-col-width);
+}
+.report-b th:nth-child(6) {
+  width: var(--report-b-sixth-col-width);
+}
+.report-b th:nth-child(7) {
+  width: var(--report-b-seventh-col-width);
+}
+.report-b th:nth-child(8) {
+  width: var(--report-b-eighth-col-width);
+}
+.report-b--header.report-b th:nth-child(6) {
+/*  width: calc(var(--report-b-sixth-col-width) + var(--report-b-seventh-col-width) + var(--report-b-eighth-col-width));*/
+  width: 400px;
+}
+
+
+
+.report-b td:nth-child(4) {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+td+td {
+  width: auto;
+}
+
+th+td {
+  width: auto;
+}

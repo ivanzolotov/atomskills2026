@@ -1,0 +1,77 @@
+:root {
+  --reports-width: 900px;
+  --report-b-first-col-width: 100px;
+  --report-b-second-col-width: 100px;
+  --report-b-third-col-width: 100px;
+  --report-b-fourth-col-width: 100px;
+  --report-b-fifth-col-width: 100px;
+  --report-b-sixth-col-width: 100px;
+  --report-b-seventh-col-width: 100px;
+  --report-b-eighth-col-width: 100px;
+}
+
+@page {
+/*  size: A4 landscape;*/
+/*  margin: 0 0 30mm 0;*/
+}
+
+body {
+/*  margin: 30px;*/
+}
+
+
+/* Таблица 2 */
+
+.report-b {
+  margin: 0 auto;
+/*  width: var(--reports-width);*/
+  border-color: #ff0000;
+  border-width: 1px;
+  font-size: 10pt;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.report-b td {
+  border: 1px solid black;
+}
+
+.report-b th {
+  border: 1px solid black;
+}
+
+/*.report-b th:nth-child(1) {
+  width: var(--report-b-first-col-width);
+}
+.report-b th:nth-child(2) {
+  width: var(--report-b-second-col-width);
+}
+.report-b th:nth-child(3) {
+  width: var(--report-b-third-col-width);
+}
+.report-b th:nth-child(4) {
+  width: var(--report-b-fourth-col-width);
+}
+.report-b th:nth-child(5) {
+  width: var(--report-b-fifth-col-width);
+}
+.report-b th:nth-child(6) {
+  width: var(--report-b-sixth-col-width);
+}
+.report-b th:nth-child(7) {
+  width: var(--report-b-seventh-col-width);
+}
+.report-b th:nth-child(8) {
+  width: var(--report-b-eighth-col-width);
+}*/
+.report-b--header.report-b th:nth-child(6) {
+/*  width: calc(var(--report-b-sixth-col-width) + var(--report-b-seventh-col-width) + var(--report-b-eighth-col-width));*/
+/*  width: 65.8mm;*/
+}
+
+
+
+.report-b td:nth-child(4) {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
